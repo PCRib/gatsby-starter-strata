@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
+import { FaReact, FaAws, FaNode } from 'react-icons/fa';
+import { DiMongodb } from "react-icons/di"
 
 class Gallery extends Component {
     constructor () {
@@ -62,12 +64,19 @@ class Gallery extends Component {
                     <a
                         className="image fit thumb"
                         href={obj.src}
-                        onClick={(e) => this.openLightbox(i, e)}
                     >
                         <img src={obj.thumbnail} />
                     </a>
 
                     <h3>{obj.caption}</h3>
+                    <ul className="icons">
+                       <li><a href="https://reactjs.org/" className="icon"><FaReact/></a></li>
+                        <li><a href="https://aws.amazon.com/" className="icon"><FaNode/></a></li>
+                        <li><a href="https://www.mongodb.com/" className="icon"><DiMongodb/></a></li>
+                        <li><a href="https://aws.amazon.com/" className="icon"><FaAws/></a></li>
+                        <li><a href="#" className="icon"><img src={obj.icons.GraphQL} alt=""/></a></li>
+
+                    </ul>
                     <p>{obj.description}</p>
                 </article>
             );
@@ -83,16 +92,16 @@ class Gallery extends Component {
         return (
             <div>
                 {this.renderGallery()}
-                <Lightbox
-                    currentImage={this.state.currentImage}
-                    images={this.props.images}
-                    isOpen={this.state.lightboxIsOpen}
-                    onClickImage={this.handleClickImage}
-                    onClickNext={this.gotoNext}
-                    onClickPrev={this.gotoPrevious}
-                    onClickThumbnail={this.gotoImage}
-                    onClose={this.closeLightbox}
-                />
+                {/*<Lightbox*/}
+                    {/*currentImage={this.state.currentImage}*/}
+                    {/*images={this.props.images}*/}
+                    {/*isOpen={this.state.lightboxIsOpen}*/}
+                    {/*onClickImage={this.handleClickImage}*/}
+                    {/*onClickNext={this.gotoNext}*/}
+                    {/*onClickPrev={this.gotoPrevious}*/}
+                    {/*onClickThumbnail={this.gotoImage}*/}
+                    {/*onClose={this.closeLightbox}*/}
+                {/*/>*/}
             </div>
         );
     }
