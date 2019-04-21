@@ -14,7 +14,7 @@ import thumb04 from '../assets/images/thumbs/pokegraph.png'
 const DEFAULT_IMAGES = [
   {
     id: '1',
-    src: 'https://hintsjs.netlify.com/',
+    src: 'https://waitrapp.herokuapp.com/',
     thumbnail: thumb01,
     caption: 'Waitr App',
     description: 'Marketplace and work management for catering servers.',
