@@ -6,10 +6,10 @@ import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 import GraphQL from '../assets/images/SVGS/graphql.svg'
 
-import thumb01 from '../assets/images/Waitr/Screen Shot 2018-08-28 at 10.48.12 AM.png'
+import thumb01 from '../assets/images/thumbs/Waitr.png'
 import thumb02 from '../assets/images/thumbs/hintsjs.png'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
+import thumb03 from '../assets/images/thumbs/wastemans.png'
+import thumb04 from '../assets/images/thumbs/pokegraph.png'
 
 const DEFAULT_IMAGES = [
   {

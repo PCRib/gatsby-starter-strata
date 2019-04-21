@@ -943,7 +943,11 @@ input[type='button'],
   @include vendor('justify-content', 'space-between');
   background-color: _palette(accent2, bg);
   background-attachment: scroll, fixed;
-  background-image: url('images/overlay.png'), url('../images/bg.jpg');
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url('images/ilya-pavlov-87438-unsplash.jpg'), url('../images/bg.jpg');
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
   background-size: auto, auto 100%;
